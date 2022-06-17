@@ -16,3 +16,4 @@ stop_environment:
     action: stop
   when: manual
   script: serverless remove
+ 
