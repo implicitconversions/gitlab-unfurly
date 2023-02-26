@@ -7,7 +7,7 @@ deploy:
     on_stop: stop_environment
   before_script:
     - serverless plugin install -n serverless-python-requirements
-  script: serverless deploy
+  script: SLS_DEBUG=* serverless deploy
 
 stop_environment:
   stage: deploy
