@@ -40,7 +40,7 @@ functions:
 
 provider:
   name: aws
-  runtime: python3.6
+  runtime: python3.9
   region: ${env:AWS_REGION}
   memorySize: 128
 
