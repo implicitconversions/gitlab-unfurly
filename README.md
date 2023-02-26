@@ -3,7 +3,7 @@
 Serverless Slack bot for unfurling GitLab URLs.
 
 [![serverless](http://public.serverless.com/badges/v3.svg)](http://www.serverless.com) 
-[![Python: 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://python.org) 
+[![Python: 3.9](https://img.shields.io/badge/python-3.9-blue.svg)](https://python.org) 
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black) 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/kiwicom/gitlab-unfurly/blob/master/LICENSE)
 
@@ -80,7 +80,7 @@ If for some reason you do not want to use GitLab CI to deploy this lambda, then 
 
 Deployment environment requirements:
 1. Linux:
-   1. Python 3.8
+   1. Python 3.9
    2. set dockerizePip to false in the serverless.yml.
 2. Windows
    1. Docker
