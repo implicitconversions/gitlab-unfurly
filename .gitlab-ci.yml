@@ -1,4 +1,4 @@
-image: public.ecr.aws/sam/build-python3.9:latest-arm64
+image: implicitconversions/sls
 
 deploy:
   stage: deploy
