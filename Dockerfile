@@ -1,5 +1,5 @@
 FROM kiwicom/sls
-# Install Python 3.9
-RUN apt-get update && apt-get install -y python3.9
-# Install pip
-RUN curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && python get-pip.py
+# Install Python 3.9 with verbose
+RUN pyenv install -v 3.9-dev
+# Set Python 3.9 as the default Python version
+RUN pyenv global 3.9-dev
