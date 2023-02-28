@@ -35,15 +35,15 @@ framework.
 8. Copy the OAuth Access Token. That is your SLACK_TOKEN referenced later.
 
 ### Get AWS Credentials
-You will need AWS Access keys. If you do not know your keys or don't have them, you can retrieve your personal access keys from the following url:
+You will need AWS Access keys. Create a user with with access tokens specifically for the serverless deployment:
 https://console.aws.amazon.com/iam/home?region=us-west-2#/security_credentials
 
 For more information about creating an AWS account, or using an appropriately scoped service account, follow [these directions from serverless](https://serverless.com/framework/docs/providers/aws/guide/credentials/)
 
 ### Get GitLab Token
-1. In GitLab, go to your user settings, which are found in the upper right corner of the Website.
+1. In GitLab, go to your group settings, which are found in the upper right corner of the Website.
 2. Open the access tokens section found in the left menu
-3. Add a personal Access Token with api scope
+3. Add a group Access Token with api scope
 4. The token presented is your GITLAB_TOKEN referenced later
 
 ### Deploy Using GitLab-CI
@@ -111,6 +111,10 @@ The first step to troubleshooting is to open the AWS Console and navigate to the
    2. Use [this StackOverflow answer](https://stackoverflow.com/a/59638101/576153) to resolve the issue
 1. auth_failure while contacting slack
    1. This is likely caused by you skipping step #6 in the [Create Slack App](#Create-Slack-App) section above
+   
+#### Rebuilding the docker image
+1. The docker image used is: https://hub.docker.com/repository/docker/implicitconversions/sls
+1. You can recreate the image as needed by using the `Dockerfile`
 
 ## Contributing
 
