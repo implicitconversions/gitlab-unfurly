@@ -12,7 +12,7 @@ bleach==3.1.4
     # via -r requirements.in
 certifi==2018.10.15
     # via requests
-chardet==3.0.4
+charset-normalizer==3.1.0
     # via requests
 colorama==0.4.0
     # via structlog
@@ -22,7 +22,7 @@ kiwi-structlog-config==0.1.2
     # via -r requirements.in
 python-dateutil==2.7.5
     # via arrow
-requests==2.20.1
+requests==2.31.0
     # via
     #   -r requirements.in
     #   slackclient
